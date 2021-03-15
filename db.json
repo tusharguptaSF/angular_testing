@@ -1,0 +1,34 @@
+{
+  "contacts": [
+    {
+      "name": "Dave",
+      "email": "Dave@gmail.com",
+      "mobile": "8937423",
+      "id": 1
+    },
+    {
+      "name": "James",
+      "email": "James@gmail.com",
+      "mobile": "34234",
+      "id": 2
+    },
+    {
+      "name": "Mario",
+      "email": "Mario@gmail.com",
+      "mobile": "324234",
+      "id": 3
+    },
+    {
+      "name": "Smith",
+      "email": "smith@gmail.com",
+      "mobile": "234234",
+      "id": 4
+    },
+    {
+      "name": "John",
+      "email": "john@gmail.com",
+      "mobile": "8768",
+      "id": 5
+    }
+  ]
+}

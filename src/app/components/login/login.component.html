@@ -1,0 +1,27 @@
+<div class="breadcrumb">
+    <h4>Login</h4>
+</div>
+
+<div>
+    <form [formGroup]='loginform' (ngSubmit)='validateUser()' class='loginForm'>
+        <mat-form-field class="example-full-width">
+            <input formControlName='username' matInput placeholder="username" >
+            <mat-error 
+            *ngIf="form.username.errors?.required">username is mandatory</mat-error>
+            <mat-error 
+            *ngIf="form.username.errors?.minlength">user name should be at least of 5 characters</mat-error>
+          </mat-form-field>
+        
+          <mat-form-field class="example-full-width">
+            <input type="password" formControlName='password' matInput placeholder="password">
+            <mat-error 
+            *ngIf="form.password.errors?.required">password is mandatory</mat-error>
+            <mat-error 
+            *ngIf="form.password.errors?.minlength">password should be at least of 5 characters</mat-error>
+          </mat-form-field>
+
+          <button [disabled]='loginform.invalid' mat-raised-button color="primary">Login</button>
+    </form>
+<div>
+
+  <small class='text-danger'>{{errorMsg}}</small>

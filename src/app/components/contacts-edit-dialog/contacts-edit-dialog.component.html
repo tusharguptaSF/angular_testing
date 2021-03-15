@@ -1,0 +1,12 @@
+<section class='form-container'>
+    <mat-form-field class="example-full-width">
+        <input [(ngModel)]="contact.name" matInput placeholder="Name">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <input [(ngModel)]="contact.email" matInput placeholder="Email">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <input [(ngModel)]="contact.mobile" matInput placeholder="Mobile">
+    </mat-form-field>
+    <button (click)="updateContact()" mat-raised-button color="primary">Update</button>
+</section>

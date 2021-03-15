@@ -1,0 +1,25 @@
+<!-- New Contact Adder -->
+<section class='mat-exp-panel'>
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    New Contact
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <section class='form-container'>
+                <mat-form-field class="example-full-width">
+                    <input [(ngModel)]="newContact.name" matInput placeholder="Name">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input [(ngModel)]="newContact.email" matInput placeholder="Email">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input [(ngModel)]="newContact.mobile" matInput placeholder="Mobile">
+                </mat-form-field>
+                <button (click)="addNewContact()" mat-raised-button color="primary">Add</button>
+            </section>
+        </mat-expansion-panel>
+    </mat-accordion>
+</section>
+<small class='text-center'>{{message}}</small>

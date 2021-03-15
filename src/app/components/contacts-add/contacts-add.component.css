@@ -1,0 +1,8 @@
+.mat-exp-panel{
+    width: 60vw;
+    margin:5vh auto;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
