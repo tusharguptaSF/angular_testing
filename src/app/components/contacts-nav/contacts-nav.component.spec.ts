@@ -14,7 +14,7 @@ import {
 import { By } from '@angular/platform-browser'
 ;
 
-fdescribe('ContactsNavComponent', () => {
+describe('ContactsNavComponent', () => {
   let component: ContactsNavComponent;
   let fixture: ComponentFixture<ContactsNavComponent>;
 

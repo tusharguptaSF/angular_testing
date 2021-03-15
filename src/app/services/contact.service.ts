@@ -55,7 +55,9 @@ export class ContactService {
       this.subject.next(this.contactList);
     }))
   }
-
+  // getContacts() {
+  //   return this.http.get<Contact[]>('http://localhost:3000/api/v1/contacts');
+  // }
 
 
 
